@@ -1,0 +1,261 @@
+Saurabhs-MacBook-Pro:kagglemoviereviews saurabhpatel$ python classifyKaggle.py corpus/ 1000
+('Read', 156060, 'phrases, using', 1000, 'random phrases')
+---------------------------------------------------
+Accuracy with normal features, without pre-processing steps : 
+Training and testing a classifier 
+Accuracy of classifier : 
+0.59
+---------------------------------------------------
+Showing most informative features
+Most Informative Features
+          contains(make) = True                4 : 2      =     23.1 : 1.0
+          contains(good) = True                4 : 2      =     20.0 : 1.0
+            contains(up) = True                4 : 2      =     17.9 : 1.0
+        contains(script) = True                0 : 2      =     17.8 : 1.0
+            contains(we) = True                0 : 2      =     17.8 : 1.0
+           contains(was) = True                0 : 2      =     17.8 : 1.0
+           contains(did) = True                0 : 2      =     17.8 : 1.0
+           contains(can) = True                0 : 2      =     17.8 : 1.0
+          contains(here) = True                0 : 2      =     17.8 : 1.0
+           contains(too) = True                0 : 2      =     14.9 : 1.0
+          contains(well) = True                4 : 2      =     12.8 : 1.0
+        contains(cinema) = True                4 : 2      =     12.8 : 1.0
+          contains(gets) = True                4 : 2      =     12.8 : 1.0
+        contains(brings) = True                4 : 2      =     12.8 : 1.0
+          contains(with) = True                4 : 1      =     12.7 : 1.0
+             contains(A) = True                4 : 2      =     10.8 : 1.0
+         contains(there) = True                0 : 2      =     10.7 : 1.0
+          contains(back) = True                0 : 2      =     10.7 : 1.0
+       contains(neither) = True                0 : 2      =     10.7 : 1.0
+         contains(story) = True                0 : 2      =     10.7 : 1.0
+         contains(three) = True                0 : 2      =     10.7 : 1.0
+           contains(has) = True                0 : 2      =     10.7 : 1.0
+         contains(seems) = True                0 : 2      =     10.7 : 1.0
+          contains(know) = True                0 : 2      =     10.7 : 1.0
+        contains(school) = True                0 : 2      =     10.7 : 1.0
+           contains(...) = True                0 : 2      =     10.7 : 1.0
+         contains(would) = True                0 : 2      =     10.7 : 1.0
+          contains(just) = True                0 : 3      =     10.3 : 1.0
+          contains(like) = True                0 : 3      =     10.3 : 1.0
+           contains(end) = True                0 : 3      =     10.3 : 1.0
+None
+ 
+The confusion matrix
+  |  0  1  2  3  4 |
+--+----------------+
+0 | <1> .  1  .  . |
+1 |  2 <2> 4  4  3 |
+2 |  1  2<51> 3  2 |
+3 |  .  2  9 <5> 3 |
+4 |  2  .  3  . <.>|
+--+----------------+
+(row = reference; col = test)
+
+
+---------------------------------------------------
+Accuracy with pre-processed features : 
+Training and testing a classifier 
+Accuracy of classifier : 
+0.58
+---------------------------------------------------
+Showing most informative features
+Most Informative Features
+          contains(good) = True                4 : 2      =     20.0 : 1.0
+        contains(script) = True                0 : 2      =     17.8 : 1.0
+           contains(can) = True                0 : 2      =     17.8 : 1.0
+          contains(make) = True                4 : 2      =     13.8 : 1.0
+         contains(whole) = True                4 : 2      =     12.8 : 1.0
+        contains(actors) = True                4 : 2      =     12.8 : 1.0
+          contains(well) = True                4 : 2      =     12.8 : 1.0
+        contains(cinema) = True                4 : 2      =     12.8 : 1.0
+          contains(gets) = True                4 : 2      =     12.8 : 1.0
+           contains(man) = True                4 : 2      =     12.8 : 1.0
+        contains(brings) = True                4 : 2      =     12.8 : 1.0
+  contains(entertaining) = True                0 : 2      =     10.7 : 1.0
+          contains(back) = True                0 : 2      =     10.7 : 1.0
+         contains(great) = True                0 : 2      =     10.7 : 1.0
+         contains(thing) = True                0 : 2      =     10.7 : 1.0
+          contains(rise) = True                0 : 2      =     10.7 : 1.0
+       contains(neither) = True                0 : 2      =     10.7 : 1.0
+         contains(story) = True                0 : 2      =     10.7 : 1.0
+         contains(three) = True                0 : 2      =     10.7 : 1.0
+          contains(know) = True                0 : 2      =     10.7 : 1.0
+         contains(seems) = True                0 : 2      =     10.7 : 1.0
+      contains(material) = True                0 : 2      =     10.7 : 1.0
+        contains(series) = True                0 : 2      =     10.7 : 1.0
+           contains(guy) = True                0 : 2      =     10.7 : 1.0
+         contains(place) = True                0 : 2      =     10.7 : 1.0
+        contains(school) = True                0 : 2      =     10.7 : 1.0
+         contains(women) = True                0 : 2      =     10.7 : 1.0
+        contains(nature) = True                0 : 2      =     10.7 : 1.0
+           contains(end) = True                0 : 3      =     10.3 : 1.0
+       contains(nothing) = True                1 : 2      =      8.0 : 1.0
+None
+ 
+The confusion matrix
+  |  0  1  2  3  4 |
+--+----------------+
+0 | <1> .  1  .  . |
+1 |  2 <2> 8  1  2 |
+2 |  1  3<51> 4  . |
+3 |  .  3 10 <4> 2 |
+4 |  .  .  3  2 <.>|
+--+----------------+
+(row = reference; col = test)
+
+
+---------------------------------------------------
+Accuracy with SL_featuresets : 
+Training and testing a classifier 
+Accuracy of classifier : 
+0.58
+---------------------------------------------------
+Showing most informative features
+Most Informative Features
+           negativecount = 3                   0 : 2      =     24.2 : 1.0
+          contains(good) = True                4 : 2      =     20.0 : 1.0
+        contains(script) = True                0 : 2      =     17.8 : 1.0
+           contains(can) = True                0 : 2      =     17.8 : 1.0
+          contains(make) = True                4 : 2      =     13.8 : 1.0
+           positivecount = 3                   4 : 2      =     13.1 : 1.0
+           positivecount = 5                   4 : 2      =     13.1 : 1.0
+         contains(whole) = True                4 : 2      =     12.8 : 1.0
+        contains(actors) = True                4 : 2      =     12.8 : 1.0
+          contains(well) = True                4 : 2      =     12.8 : 1.0
+        contains(cinema) = True                4 : 2      =     12.8 : 1.0
+          contains(gets) = True                4 : 2      =     12.8 : 1.0
+           contains(man) = True                4 : 2      =     12.8 : 1.0
+        contains(brings) = True                4 : 2      =     12.8 : 1.0
+           negativecount = 5                   4 : 2      =     12.2 : 1.0
+           positivecount = 6                   4 : 2      =     12.1 : 1.0
+  contains(entertaining) = True                0 : 2      =     10.7 : 1.0
+          contains(back) = True                0 : 2      =     10.7 : 1.0
+         contains(great) = True                0 : 2      =     10.7 : 1.0
+         contains(thing) = True                0 : 2      =     10.7 : 1.0
+          contains(rise) = True                0 : 2      =     10.7 : 1.0
+       contains(neither) = True                0 : 2      =     10.7 : 1.0
+         contains(story) = True                0 : 2      =     10.7 : 1.0
+         contains(three) = True                0 : 2      =     10.7 : 1.0
+         contains(seems) = True                0 : 2      =     10.7 : 1.0
+      contains(material) = True                0 : 2      =     10.7 : 1.0
+          contains(know) = True                0 : 2      =     10.7 : 1.0
+        contains(series) = True                0 : 2      =     10.7 : 1.0
+           contains(guy) = True                0 : 2      =     10.7 : 1.0
+         contains(place) = True                0 : 2      =     10.7 : 1.0
+None
+ 
+The confusion matrix
+  |  0  1  2  3  4 |
+--+----------------+
+0 | <1> .  1  .  . |
+1 |  3 <1> 6  4  1 |
+2 |  1  2<50> 5  1 |
+3 |  1  1  9 <5> 3 |
+4 |  .  .  3  1 <1>|
+--+----------------+
+(row = reference; col = test)
+
+
+---------------------------------------------------
+Accuracy with NOT_featuresets : 
+Training and testing a classifier 
+Accuracy of classifier : 
+0.52
+---------------------------------------------------
+Showing most informative features
+Most Informative Features
+          contains(good) = True                4 : 2      =     20.0 : 1.0
+        contains(script) = True                0 : 2      =     17.8 : 1.0
+           contains(can) = True                0 : 2      =     17.8 : 1.0
+          contains(make) = True                4 : 2      =     13.8 : 1.0
+         contains(whole) = True                4 : 2      =     12.8 : 1.0
+        contains(cinema) = True                4 : 2      =     12.8 : 1.0
+          contains(gets) = True                4 : 2      =     12.8 : 1.0
+  contains(intelligence) = False               4 : 2      =     12.8 : 1.0
+        contains(brings) = True                4 : 2      =     12.8 : 1.0
+        contains(actors) = True                4 : 2      =     12.8 : 1.0
+          contains(well) = True                4 : 2      =     12.8 : 1.0
+           contains(man) = True                4 : 2      =     12.8 : 1.0
+           contains(put) = False               0 : 2      =     10.7 : 1.0
+         contains(thing) = True                0 : 2      =     10.7 : 1.0
+       contains(strange) = False               0 : 2      =     10.7 : 1.0
+      contains(material) = True                0 : 2      =     10.7 : 1.0
+          contains(know) = True                0 : 2      =     10.7 : 1.0
+       contains(already) = False               0 : 2      =     10.7 : 1.0
+          contains(dish) = False               0 : 2      =     10.7 : 1.0
+          contains(hack) = False               0 : 2      =     10.7 : 1.0
+          contains(teen) = False               0 : 2      =     10.7 : 1.0
+  contains(entertaining) = True                0 : 2      =     10.7 : 1.0
+      contains(realized) = False               0 : 2      =     10.7 : 1.0
+         contains(women) = True                0 : 2      =     10.7 : 1.0
+         contains(three) = True                0 : 2      =     10.7 : 1.0
+        contains(nature) = True                0 : 2      =     10.7 : 1.0
+    contains(disgusting) = False               0 : 2      =     10.7 : 1.0
+       contains(maudlin) = False               0 : 2      =     10.7 : 1.0
+       contains(thought) = False               0 : 2      =     10.7 : 1.0
+        contains(source) = False               0 : 2      =     10.7 : 1.0
+None
+ 
+The confusion matrix
+  |  0  1  2  3  4 |
+--+----------------+
+0 | <1> .  1  .  . |
+1 |  3 <4> 3  2  3 |
+2 |  3  7<42> 5  2 |
+3 |  2  3  7 <5> 2 |
+4 |  1  1  1  2 <.>|
+--+----------------+
+(row = reference; col = test)
+
+
+---------------------------------------------------
+Accuracy with bigram featuresets : 
+Training and testing a classifier 
+Accuracy of classifier : 
+0.58
+---------------------------------------------------
+Showing most informative features
+Most Informative Features
+          contains(good) = True                4 : 2      =     20.0 : 1.0
+        contains(script) = True                0 : 2      =     17.8 : 1.0
+           contains(can) = True                0 : 2      =     17.8 : 1.0
+          contains(make) = True                4 : 2      =     13.8 : 1.0
+         contains(whole) = True                4 : 2      =     12.8 : 1.0
+        contains(actors) = True                4 : 2      =     12.8 : 1.0
+          contains(well) = True                4 : 2      =     12.8 : 1.0
+        contains(cinema) = True                4 : 2      =     12.8 : 1.0
+          contains(gets) = True                4 : 2      =     12.8 : 1.0
+           contains(man) = True                4 : 2      =     12.8 : 1.0
+        contains(brings) = True                4 : 2      =     12.8 : 1.0
+  contains(entertaining) = True                0 : 2      =     10.7 : 1.0
+          contains(back) = True                0 : 2      =     10.7 : 1.0
+         contains(great) = True                0 : 2      =     10.7 : 1.0
+         contains(women) = True                0 : 2      =     10.7 : 1.0
+         contains(thing) = True                0 : 2      =     10.7 : 1.0
+          contains(rise) = True                0 : 2      =     10.7 : 1.0
+        contains(nature) = True                0 : 2      =     10.7 : 1.0
+         contains(story) = True                0 : 2      =     10.7 : 1.0
+         contains(three) = True                0 : 2      =     10.7 : 1.0
+         contains(seems) = True                0 : 2      =     10.7 : 1.0
+      contains(material) = True                0 : 2      =     10.7 : 1.0
+          contains(know) = True                0 : 2      =     10.7 : 1.0
+        contains(series) = True                0 : 2      =     10.7 : 1.0
+           contains(guy) = True                0 : 2      =     10.7 : 1.0
+         contains(place) = True                0 : 2      =     10.7 : 1.0
+        contains(school) = True                0 : 2      =     10.7 : 1.0
+       contains(neither) = True                0 : 2      =     10.7 : 1.0
+           contains(end) = True                0 : 3      =     10.3 : 1.0
+       contains(nothing) = True                1 : 2      =      8.0 : 1.0
+None
+ 
+The confusion matrix
+  |  0  1  2  3  4 |
+--+----------------+
+0 | <1> .  1  .  . |
+1 |  2 <2> 8  1  2 |
+2 |  1  3<51> 4  . |
+3 |  .  3 10 <4> 2 |
+4 |  .  .  3  2 <.>|
+--+----------------+
+(row = reference; col = test)
+
